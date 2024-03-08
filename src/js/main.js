@@ -82,4 +82,25 @@ document.addEventListener('DOMContentLoaded', () => {
     x: "0",
     ease: "elastic",
   })
+
+  let html = document.querySelector("html");
+  let sun = document.querySelector("#sun");
+  let moon = document.querySelector("#moon");
+
+  if (html.classList.contains("dark")) {
+    moon.style.display = "none";
+  }
+
+  sun.addEventListener('click', () => {
+    html.classList.remove("dark");
+    sun.style.display = "none";
+    moon.style.display = "block";
+  })
+
+  moon.addEventListener('click', () => {
+    html.classList.add("dark");
+    moon.style.display = "none";
+    sun.style.display = "block";
+  })
+
 });

@@ -26,17 +26,17 @@ html, body {
 }
 
 .active {
-  @apply text-yellow-400;
+  @apply text-orange-500 dark:text-yellow-400;
 }
 
 .nav li {
-  @apply hover:text-yellow-400 cursor-pointer;
+  @apply hover:text-orange-500 dark:hover:text-yellow-400 cursor-pointer;
 }
 
 .bg {
-  background-color: rgb(20, 40, 63);
+  @apply bg-slate-300 dark:bg-blue1;
 }
 
 .circle {
-  @apply w-4 h-4 rounded-full shadow-inner shadow-white opacity-50;
+  @apply w-4 h-4 rounded-full shadow-inner shadow-black dark:shadow-white opacity-50;
 }
