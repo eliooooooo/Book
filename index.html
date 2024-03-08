@@ -5,24 +5,83 @@
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <link rel="stylesheet" href="./dist/main.css">
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Madimi+One&display=swap" rel="stylesheet">
   <title>Book</title>
 </head>
 
-<body>
-  <header>
-    <nav>
-      <ul>
-        <li><a href="#">Home</a></li>
-        <li><a href="#">About</a></li>
-        <li><a href="#">Contact</a></li>
-      </ul>
-    </nav>
-  </header>
-  <main>
-
-
-    <footer></footer>
+<body class="bg h-full">
+  <main class="w-full h-full">
+    <div class="circleContainer mx-auto h-full p-8 flex flex-col justify-between gap-2"> 
+      <div class="flex flex-row justify-between gap-4" >
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle hidden sm:block"></div>
+        <div class="circle hidden md:block"></div>
+        <div class="circle hidden lg:block"></div>
+        <div class="circle hidden xl:block"></div>
+      </div>
+      <div class="flex flex-row justify-between gap-4" >
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle hidden sm:block"></div>
+        <div class="circle hidden md:block"></div>
+        <div class="circle hidden lg:block"></div>
+        <div class="circle hidden xl:block"></div>
+      </div>
+      <div class="flex flex-row justify-between gap-4" >
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle hidden sm:block"></div>
+        <div class="circle hidden md:block"></div>
+        <div class="circle hidden lg:block"></div>
+        <div class="circle hidden xl:block"></div>
+      </div>
+      <div class="flex flex-row justify-between gap-4" >
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>        
+        <div class="circle hidden sm:block"></div>
+        <div class="circle hidden md:block"></div>
+        <div class="circle hidden lg:block"></div>
+        <div class="circle hidden xl:block"></div>
+      </div>
+      <div class="flex flex-row justify-between gap-4" >
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle"></div>
+        <div class="circle hidden sm:block"></div>
+        <div class="circle hidden md:block"></div>
+        <div class="circle hidden lg:block"></div>
+        <div class="circle hidden xl:block"></div>
+      </div>      
+    </div>
+    <div class="global absolute top-20 w-full pl-4 xs:pl-12 sm:pl-20 text-white">
+      <h1 class="text-left text-2xl sm:text-3xl lg:text-4xl cursor-default"><span class="madimi-one-regular text-5xl sm:text-7xl lg:text-8xl">El<span class="rotateLetter text-yellow-400 inline-block">i</span>ott BURKLE</span><br> <span class="mt-2 sm:mt-4 md:mt-6 block">Développeur web</span></h1>
+      <nav class="mt-10 border-t-2 border-yellow-400 w-fit pt-4">
+        <ul class="nav text-lg pr-6">
+          <li class="active" id="infos">Infos</li>
+          <li id="projets">Projets</li>
+          <li id="contact">Contact</li>
+        </ul>
+      </nav>
+    </div>
+      <div class="absolute bottom-10 right-10 text-white max-w-40">
+      <p>
+        Actuellement étudiant et alternant dans la formation BUT MMI à l'IUT de Haguenau. Développeur Front-end en alternance, je développe aussi sur mon temps libre des projets webs, <span class="text-yellow-400" >front et back-end</span>.
+      </p>
+    </div>
   </main>
+  <footer></footer>
   
   <script src="./dist/main.js"></script>
 </body>
