@@ -82,6 +82,4 @@ document.addEventListener('DOMContentLoaded', () => {
     x: "0",
     ease: "elastic",
   })
-
-
 });
