@@ -6,6 +6,10 @@ html, body {
   overflow-y: hidden;
 }
 
+::selection {
+  @apply bg-orange-500 text-slate-200;
+}
+
 .madimi-one-regular {
   font-family: "Madimi One", sans-serif;
   font-weight: 400;
@@ -44,4 +48,8 @@ html, body {
 
 .buttonPrimary {
   @apply bg-orange-500 dark:bg-yellow-400 text-slate-200 dark:text-blue1 flex flex-row gap-3 items-center rounded-md p-2 mt-auto cursor-pointer;
+}
+
+.swiper-button-disabled {
+  @apply opacity-50 hover:cursor-not-allowed;
 }
