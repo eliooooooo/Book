@@ -40,15 +40,15 @@ const postCssPlugin = require('esbuild-style-plugin');
 // const chokidar = require('chokidar');
 
 // const build = () => {
-//   fs.readdir('./public/src/js', (err, files) => {
+//   fs.readdir('./src/js', (err, files) => {
 //     if(err) {
-//       console.error("erreur de lecture du dossier ./public/src/js");
+//       console.error("erreur de lecture du dossier ./src/js");
 //       process.exit(1);
 //     }
 
 //     const entryPoints = files
 //       .filter(file => file.endsWith('.js'))
-//       .map(file => `./public/src/js/${file}`);
+//       .map(file => `./src/js/${file}`);
 
 //     entryPoints.forEach(entryPoint => {
 //       esbuild.build({

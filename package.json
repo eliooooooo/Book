@@ -13,7 +13,8 @@
     "chokidar": "^3.5.3",
     "esbuild": "^0.19.11",
     "fs": "^0.0.1-security",
-    "gsap": "^3.12.5"
+    "gsap": "^3.12.5",
+    "swiper": "^11.0.7"
   },
   "devDependencies": {
     "autoprefixer": "^10.4.16",
