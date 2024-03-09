@@ -96,6 +96,14 @@ document.addEventListener('DOMContentLoaded', () => {
   let moon = document.querySelector("#moon");
   let themeSwitcher = document.querySelector(".themeSwitcher");
 
+  themeSwitcher.style.display = "block";
+  gsap.to(".themeSwitcher", {opacity:0});
+  gsap.to(".themeSwitcher", {
+    duration: 1,
+    opacity: 1,
+    ease: "ease-in-out",
+  })
+
   if (html.classList.contains("dark")) {
     moon.style.display = "none";
   }
