@@ -1,8 +1,0 @@
-name: new-project
-recipe: lamp
-config:
-  php: '7.4'
-  webroot: '/'
-proxy:
-  appserver:
-    - newproject.lndo.site
