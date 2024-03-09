@@ -2,6 +2,8 @@ html, body {
   height: 100%;
   margin: 0;
   padding: 0;
+  overflow-x: hidden;
+  overflow-y: hidden;
 }
 
 .madimi-one-regular {
@@ -34,7 +36,12 @@ html, body {
   @apply h-60 flex flex-row items-center;
 }
 .swiper-slide {
-  @apply bg-white/50 rounded-lg p-4;
-  height: 300px !important;
-  width: 300px !important;
+  @apply bg-black/30 text-slate-200 dark:text-blue1 dark:bg-white/50 rounded-lg p-4 flex flex-col cursor-default;
+  height: 280px !important;
+  width: 280px !important;
+  display: flex !important;
+}
+
+.buttonPrimary {
+  @apply bg-orange-500 dark:bg-yellow-400 text-slate-200 dark:text-blue1 flex flex-row gap-3 items-center rounded-md p-2 mt-auto cursor-pointer;
 }

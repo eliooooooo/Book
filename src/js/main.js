@@ -128,11 +128,90 @@ document.addEventListener('DOMContentLoaded', () => {
           el: '.swiper-pagination',
           type: 'progressbar',
       },
-      keyboard: {
-          enabled: true,
-          onlyInViewport: false,
-      },
   });
 
-  
+  // nav active state
+  let navLinks = document.querySelectorAll(".nav li");
+  navLinks.forEach(element => {
+    element.addEventListener('click', function(){
+      element.classList.add("active");
+      navLinks.forEach(link => {
+        if (link !== element) {
+          link.classList.remove("active");
+        }
+      })
+    });
+  });
+
+  // nav des différents pages
+  let infos = document.querySelector("#infos");
+  let projets = document.querySelector("#projets");
+  let contact = document.querySelector("#contact");
+
+  // Différents blocs
+  let infosBlock = document.querySelector(".infosContainer");
+  let projetsBlock = document.querySelector(".projetsContainer");
+  let contactBlock = document.querySelector(".contactContainer");
+
+  gsap.to( projetsBlock, { opacity: 0 });
+  gsap.to( contactBlock, { opacity: 0 });
+
+  infos.addEventListener('click', function() {
+    let tl = gsap.timeline();
+      gsap.to( ".projetsContainer", {
+        opacity: 0, // Animer l'opacité de 1 à 0
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+      gsap.to( ".contactContainer", {
+        opacity: 0, // Animer l'opacité de 1 à 0
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+      tl.to( ".infosContainer", {
+        opacity: 1, // Animer l'opacité de 0 à 1
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+  });
+
+  projets.addEventListener('click', function() {
+    let tl = gsap.timeline();
+      tl.to( ".infosContainer", {
+        opacity: 0, // Animer l'opacité de 1 à 0
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+      tl.to( ".contactContainer", {
+        opacity: 0, // Animer l'opacité de 1 à 0
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+      projetsBlock.style.display = "block";
+      tl.to( ".projetsContainer", {
+        opacity: 1, // Animer l'opacité de 0 à 1
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+  });
+
+  contact.addEventListener('click', function() {
+    let tl = gsap.timeline();
+      tl.to( ".infosContainer", {
+        opacity: 0, // Animer l'opacité de 1 à 0
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+      tl.to( ".projetsContainer", {
+        opacity: 0, // Animer l'opacité de 1 à 0
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+      contactBlock.style.display = "block";
+      tl.to( ".contactContainer", {
+        opacity: 1, // Animer l'opacité de 0 à 1
+        duration: 0.3,
+        ease: "ease-in-out",
+      });
+  });
 });
