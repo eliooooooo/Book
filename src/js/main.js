@@ -7,8 +7,7 @@ import { ScrollTrigger } from "gsap/ScrollTrigger";
 
 import Swiper from 'swiper';
 import 'swiper/css';
-import { Navigation, Pagination } from 'swiper/modules';
-
+import { Navigation, Pagination, Mousewheel } from 'swiper/modules';
 
 gsap.registerPlugin(ScrollTrigger);
 
@@ -121,7 +120,7 @@ document.addEventListener('DOMContentLoaded', () => {
   })
 
   // Swiper projets
-  Swiper.use([Navigation, Pagination]);
+  Swiper.use([Navigation, Pagination, Mousewheel]);
   const swiper = new Swiper(".swiperProjet", {
       loop: false,
       slidesPerView: 'auto',
@@ -136,6 +135,9 @@ document.addEventListener('DOMContentLoaded', () => {
           el: '.swiper-pagination',
           type: 'progressbar',
       },
+      mousewheel: {
+        enabled: true,
+      }
   });
 
   // nav active state
@@ -166,16 +168,19 @@ document.addEventListener('DOMContentLoaded', () => {
 
   infos.addEventListener('click', function() {
     let tl = gsap.timeline();
+      projetsBlock.style.display = "none";
       gsap.to( ".projetsContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
         duration: 0.3,
         ease: "ease-in-out",
       });
+      projetsBlock.style.display = "none";
       gsap.to( ".contactContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
         duration: 0.3,
         ease: "ease-in-out",
       });
+      infosBlock.style.display = "block";
       tl.to( ".infosContainer", {
         opacity: 1, // Animer l'opacité de 0 à 1
         duration: 0.3,
@@ -185,11 +190,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   projets.addEventListener('click', function() {
     let tl = gsap.timeline();
+      infosBlock.style.display = "none";
       tl.to( ".infosContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
         duration: 0.3,
         ease: "ease-in-out",
       });
+      contactBlock.style.display = "none";
       tl.to( ".contactContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
         duration: 0.3,
@@ -205,11 +212,13 @@ document.addEventListener('DOMContentLoaded', () => {
 
   contact.addEventListener('click', function() {
     let tl = gsap.timeline();
+      infosBlock.style.display = "none";
       tl.to( ".infosContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
         duration: 0.3,
         ease: "ease-in-out",
       });
+      projetsBlock.style.display = "none";
       tl.to( ".projetsContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
         duration: 0.3,
