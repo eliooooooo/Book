@@ -30,5 +30,6 @@ jobs:
         SSH_HOST: ${{ secrets.SSH_HOST }}
         SSH_USER: ${{ secrets.SSH_USER }}
       run: |
+        eval "$(ssh-agent -s)"
         echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
         rsync -avz --delete-after ./ $SSH_USER@$SSH_HOST:~/www/
