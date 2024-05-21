@@ -1,22 +1,14 @@
 html, body {
   height: 100%;
+  min-height: 665px;
   margin: 0;
   padding: 0;
-  scroll-behavior: smooth;
+  overflow-x: hidden;
+  @apply min-h-[665px] sm:min-h-[700px] md:min-h-[715px] lg:min-h-[745px];
 }
 
-.debug{
-  @apply border !border-double !border-red-600 bg-red-200;
-}
-
-:root {
-  --debug: 0
-}
-
-*,
-*:before,
-*:after {
-  outline: calc(var(--debug) * 1px) dotted red;
+::selection {
+  @apply bg-orange-500 text-slate-200;
 }
 
 .madimi-one-regular {
@@ -26,17 +18,39 @@ html, body {
 }
 
 .active {
-  @apply text-yellow-400;
+  @apply text-orange-500 dark:text-yellow-400;
 }
 
 .nav li {
-  @apply hover:text-yellow-400 cursor-pointer;
+  @apply hover:text-orange-500 dark:hover:text-yellow-400 cursor-pointer;
 }
 
 .bg {
-  background-color: rgb(20, 40, 63);
+  @apply bg-slate-300 dark:bg-blue1;
 }
 
 .circle {
-  @apply w-4 h-4 rounded-full shadow-inner shadow-white opacity-50;
+  @apply w-4 h-4 rounded-full shadow-inner shadow-black dark:shadow-white opacity-50;
+}
+
+.swiper {
+  @apply w-full;
+}
+
+.swiper-wrapper {
+  @apply h-60 flex flex-row items-center;
+}
+.swiper-slide {
+  @apply bg-black/30 text-slate-200 dark:text-blue1 dark:bg-white/50 rounded-lg p-4 flex flex-col cursor-default;
+  height: 280px !important;
+  width: 280px !important;
+  display: flex !important;
+}
+
+.buttonPrimary {
+  @apply bg-orange-500 dark:bg-yellow-400 text-slate-200 dark:text-blue1 flex flex-row gap-3 items-center rounded-md p-2 mt-auto cursor-pointer;
+}
+
+.swiper-button-disabled {
+  @apply opacity-50 hover:cursor-not-allowed;
 }
