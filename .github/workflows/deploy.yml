@@ -9,22 +9,8 @@ on:
 jobs:
   deploy:
     runs-on: ubuntu-latest
-
+    timeout-minutes: 5
     steps:
-    - name: Checkout repository
-      uses: actions/checkout@v2
-
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
-      with:
-        node-version: '20'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build and minify the project
-      run: npm run prod
-
     - name: Deploy to Server
       uses: appleboy/ssh-action@master
       with:
@@ -33,4 +19,8 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         script_stop: true
         script: |
-          
+          git checkout origin main 
+          git fetch --all
+          git reset --hard origin/master
+          npm install
+          npm run prod
