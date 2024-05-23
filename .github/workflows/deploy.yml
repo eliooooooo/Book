@@ -27,6 +27,7 @@ jobs:
 
     - name: Copy to server
       run: |
+        pwd
         sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -ro StrictHostKeyChecking=no Book/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/www
 
     # - name: Deploy to Server
