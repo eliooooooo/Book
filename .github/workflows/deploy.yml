@@ -25,11 +25,11 @@ jobs:
       run: npm run prod
 
     - name: Deploy to Server
-      env:
-        SSH_PRIVATE_KEY: ${{ secrets.SSH_PRIVATE_KEY }}
-        SSH_HOST: ${{ secrets.SSH_HOST }}
-        SSH_USER: ${{ secrets.SSH_USER }}
-      run: |
-        eval "$(ssh-agent -s)"
-        echo "$SSH_PRIVATE_KEY" | tr -d '\r' | ssh-add - > /dev/null
-        rsync -avz -e "ssh -o StrictHostKeyChecking=no" --delete-after ./ $SSH_USER@$SSH_HOST:~/www/
+      uses: appleboy/ssh-action@master
+      with:
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        script_stop: true
+        script: |
+          
