@@ -20,14 +20,14 @@ jobs:
         node-version: '20'
 
     - name: Install dependencies
-      run: npm install -v
+      run: npm install
 
     - name: Build and minify the project
-      run: npm run prod -v
+      run: npm run prod
 
     - name: Copy to server
       run: |
-        sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -rf Book/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/www
+        sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -r Book/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/www
 
     # - name: Deploy to Server
     #   uses: appleboy/ssh-action@master
