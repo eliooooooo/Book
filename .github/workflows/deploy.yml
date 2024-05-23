@@ -27,7 +27,7 @@ jobs:
 
     - name: Copy to server
       run: |
-        sshpass -p '${{ secrets.SSH_PASSWORD }}' scp Book/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/www
+        sshpass -p ${{ secrets.SSH_PASSWORD }} scp -rf Book/* ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/www
 
     # - name: Deploy to Server
     #   uses: appleboy/ssh-action@master
