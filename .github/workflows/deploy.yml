@@ -30,5 +30,4 @@ jobs:
           rm -rf Book
           cd www
           npm install
-          ls
-          npm run prod || { echo 'npm run prod failed'; exit 1; }
+          npm run prod
