@@ -1,46 +1,32 @@
-name: Deploy to Production
+name: Deploy to Server
 
 on:
   push:
     branches:
       - main
-  workflow_dispatch:
 
 jobs:
   deploy:
     runs-on: ubuntu-latest
-    timeout-minutes: 5
+
     steps:
-    - name: Checkout repository
+    - name: Checkout code
       uses: actions/checkout@v2
 
-    - name: Set up Node.js
-      uses: actions/setup-node@v2
+    - name: Deploy to Server
+      uses: appleboy/ssh-action@v0.1.5
       with:
-        node-version: '20'
-
-    - name: Install dependencies
-      run: npm install
-
-    - name: Build and minify the project
-      run: npm run prod
-
-    - name: Copy to server
-      run: |
-        pwd
-        sshpass -p '${{ secrets.SSH_PASSWORD }}' scp -ro StrictHostKeyChecking=no * ${{ secrets.SSH_USER }}@${{ secrets.SSH_HOST }}:~/www
-
-    # - name: Deploy to Server
-    #   uses: appleboy/ssh-action@master
-    #   with:
-    #     host: ${{ secrets.SSH_HOST }}
-    #     username: ${{ secrets.SSH_USER }}
-    #     password: ${{ secrets.SSH_PASSWORD }}
-    #     script_stop: true
-    #     script: |
-    #       git clone https://github.com/eliooooooo/Book.git
-    #       cp -r Book/* www
-    #       rm -rf Book
-    #       cd www
-    #       npm install && npm run prod
-          
+        host: ${{ secrets.SSH_HOST }}
+        username: ${{ secrets.SSH_USER }}
+        password: ${{ secrets.SSH_PASSWORD }}
+        script_stop: true
+        script: |
+          git clone https://github.com/eliooooooo/Book.git
+          if [ ! -d "www" ]; then
+            mkdir www
+          fi
+          cp -r Book/* www
+          rm -rf Book
+          cd www
+          npm install
+          npm run prod
