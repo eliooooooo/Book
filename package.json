@@ -1,5 +1,5 @@
 {
-  "name": "new-project",
+  "name": "book",
   "private": true,
   "scripts": {
     "clean": "rm -rf ./dist",
