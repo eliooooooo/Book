@@ -21,6 +21,7 @@ jobs:
         password: ${{ secrets.SSH_PASSWORD }}
         script_stop: true
         script: |
+          set -e # Arrêter le script si une commande échoue
           git clone https://github.com/eliooooooo/Book.git
           if [ ! -d "www" ]; then
             mkdir www
@@ -29,4 +30,4 @@ jobs:
           rm -rf Book
           cd www
           npm install
-          npm run prod
+          npm run prod || { echo 'npm run prod failed'; exit 1; }
