@@ -44,6 +44,7 @@ jobs:
           
           # Installer les dépendances
           npm ci
+          composer i
           
           # Afficher les fichiers et permissions dans le répertoire www après l'installation
           echo "Contenu du répertoire www après l'installation:"
