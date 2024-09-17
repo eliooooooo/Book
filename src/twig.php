@@ -4,7 +4,7 @@ use Twig\Environment;
 use Twig\Extension\DebugExtension;
 use Twig\Loader\FilesystemLoader;
 
-require_once('../vendor/autoload.php');
+require_once('./vendor/autoload.php');
 
 // Fonction qui permet d'initialiser Twig en fixant le dossier des modèles
 function init_twig()
