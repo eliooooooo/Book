@@ -76,12 +76,6 @@ $data = [
         'link' => 'https://elioooooo.fr/js-animation/'
     ],
     [
-        'tip' => 'Documentation',
-        'title' => 'Personnal GSAP Doc',
-        'plot' => 'Ce projet provient de mon apprentissage de la librairie GSAP. J\'ai créé une documentation personnelle pour m\'aider à mémoriser son fonctionnement.',
-        'git' => 'https://github.com/eliooooooo/Integration-GSAP',
-    ],  
-    [
         'tip' => 'Front-End',
         'title' => 'Le Louvre V.2',
         'plot' => 'Intégration d\'un site en utilisant le moteur de template twig. J\'ai pu découvrir et pratiquer la gestion d\'un site avec un système de template..',
