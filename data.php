@@ -15,6 +15,13 @@ $data = [
         'link' => 'https://www.cuej.info/mini-sites/sauvage/'
     ],
     [
+        'tip' => 'Front-End',
+        'title' => 'Rest Countries App',
+        'plot' => 'Rest Countries App est une application web développée en VueJS permettant de rechercher des informations sur les pays du monde.',
+        'git' => 'https://github.com/eliooooooo/Vuejs-RestCountries',
+        'link' => 'https://elioooooo.fr/vue-countries/'
+    ],
+    [
         'tip' => 'Full-Stack',
         'title' => 'Site du LCO',
         'plot' => 'Ce site est basé sur un thème Wordpress personnalisé crée pour l\'occasion et selon les critères de l\'association.',
