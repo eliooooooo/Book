@@ -1,0 +1,4 @@
+name: book
+recipe: lamp
+config:
+  webroot: .
