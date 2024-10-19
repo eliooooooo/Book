@@ -60,7 +60,8 @@ $data = [
         'tip' => 'Unity',
         'title' => 'Find the remote',
         'plot' => 'Find the remote est un jeu crée en équipe sur unity. Ce projet à permis de travailler la modélisation 3D ainsi que la prise en main de unity.',
-        'git' => 'https://github.com/eliooooooo/FindTheRemote'
+        'git' => 'https://github.com/eliooooooo/FindTheRemote',
+        'link' => 'https://gamejolt.net/?token=c4doHxcqXmM6RYZUdRZoHWCP7QnbQT'
     ],
     [
         'tip' => 'Full-Stack',
