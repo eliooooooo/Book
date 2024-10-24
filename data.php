@@ -5,7 +5,6 @@ $data = [
         'title' => 'Chart My Time',
         'plot' => 'Chart My Time est une application web pour le suivi de votre temps, développée sur mon temps libre, à partir de zéro et sans frameworks.',
         'git' => 'https://github.com/eliooooooo/ChartMyTime',
-        'link' => 'https://elioooooo.fr/chart-my-time/'
     ],
     [
         'tip' => 'Full-Stack',
@@ -19,7 +18,6 @@ $data = [
         'title' => 'Rest Countries App',
         'plot' => 'Rest Countries App est une application web développée en VueJS permettant de rechercher des informations sur les pays du monde.',
         'git' => 'https://github.com/eliooooooo/Vuejs-RestCountries',
-        'link' => 'https://elioooooo.fr/vue-countries/'
     ],
     [
         'tip' => 'Full-Stack',
@@ -68,34 +66,17 @@ $data = [
         'title' => 'The Shoes Spot',
         'plot' => 'The Shoes Spot est un site e-commerce fictif développé en PHP, sans framework. Pendant ce projet j\'ai pu découvrir la gestion d\'un site basé sur une base de donnée.',
         'git' => 'https://github.com/eliooooooo/TheShoesSpot',
-        'link' => 'https://elioooooo.fr/the-shoes-spot/'
     ],  
     [
         'tip' => 'Package',
         'title' => 'Starter Tailwind-Sass',
         'plot' => 'Ce package permet de démarer un projet en utilisant Tailwind CSS et Sass et proposant une compilation. Il peut être combiné avec d\'autres technologies.',
         'git' => 'https://github.com/eliooooooo/Starter-tailwind-sass',
-        'link' => 'https://elioooooo.fr/Starter-tailwind-sass/'
     ],
     [
         'tip' => 'Front-End',
         'title' => 'Javascript games',
         'plot' => 'Lors de ce projet j\'ai pu découvrir et pratiquer les bases des animations Javascript pour développer plusieurs mini-jeux.',
         'git' => 'https://github.com/eliooooooo/Js-Animation',
-        'link' => 'https://elioooooo.fr/js-animation/'
-    ],
-    [
-        'tip' => 'Front-End',
-        'title' => 'Le Louvre V.2',
-        'plot' => 'Intégration d\'un site en utilisant le moteur de template twig. J\'ai pu découvrir et pratiquer la gestion d\'un site avec un système de template..',
-        'git' => 'https://github.com/eliooooooo/Louvre-v2',
-        'link' => 'https://elioooooo.fr/Louvre-v2/'
-    ],  
-    [
-        'tip' => 'Front-End',
-        'title' => 'Le Louvre V.1',
-        'plot' => 'Mon premier site web, j\'ai pu découvrir et pratiquer les bases de l\'intégration web ainsi que découvrir les différents outils.',
-        'git' => 'https://github.com/eliooooooo/Louvre-v1',
-        'link' => 'https://elioooooo.fr/Louvre-v1/'
-    ]    
+    ]
 ];
