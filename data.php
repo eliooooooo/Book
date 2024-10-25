@@ -5,6 +5,7 @@ $data = [
         'title' => 'Chart My Time',
         'plot' => 'Chart My Time est une application web pour le suivi de votre temps, développée sur mon temps libre, à partir de zéro et sans frameworks.',
         'git' => 'https://github.com/eliooooooo/ChartMyTime',
+        'link' => 'https://chart-my-time.elioooooo.fr/'
     ],
     [
         'tip' => 'Full-Stack',
