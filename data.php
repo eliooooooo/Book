@@ -67,6 +67,7 @@ $data = [
         'title' => 'The Shoes Spot',
         'plot' => 'The Shoes Spot est un site e-commerce fictif développé en PHP, sans framework. Pendant ce projet j\'ai pu découvrir la gestion d\'un site basé sur une base de donnée.',
         'git' => 'https://github.com/eliooooooo/TheShoesSpot',
+        'link' => 'https://shoes.elioooooo.fr/'
     ],  
     [
         'tip' => 'Package',
