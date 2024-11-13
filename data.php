@@ -15,17 +15,17 @@ $data = [
         'link' => 'https://www.cuej.info/mini-sites/sauvage/'
     ],
     [
+        'tip' => 'IA',
+        'title' => 'Climbing Related Model',
+        'plot' => 'Climbing Related Model est un modèle de machine learning développé en Python pour définir ou non si une requête utilisateur est liée à l\'escalade.',
+        'git' => 'https://github.com/eliooooooo/ClimbingRelatedModel',
+        'link' => 'https://www.climbing-model.elioooooo.fr/'
+    ],
+    [
         'tip' => 'Front-End',
         'title' => 'Rest Countries App',
         'plot' => 'Rest Countries App est une application web développée en VueJS permettant de rechercher des informations sur les pays du monde.',
         'git' => 'https://github.com/eliooooooo/Vuejs-RestCountries',
-    ],
-    [
-        'tip' => 'Full-Stack',
-        'title' => 'Site du LCO',
-        'plot' => 'Ce site est basé sur un thème Wordpress personnalisé crée pour l\'occasion et selon les critères de l\'association.',
-        'git' => 'https://github.com/eliooooooo/LCO-custom-wp',
-        'link' => 'https://lcoberschaeffolsheim.fr/'
     ],
     [
         'tip' => 'Full-Stack',
