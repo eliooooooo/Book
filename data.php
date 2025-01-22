@@ -1,6 +1,13 @@
 <?php
 $data = [
     [
+        'tip' => 'Front-End',
+        'title' => 'Site monitoring Dashboard',
+        'plot' => 'Track My Site est un tableau de bord de surveillance de site web développé en VueJS. Il permet de surveiller les performances de votre site.',
+        'git' => 'https://github.com/eliooooooo/Vue-Dashboard',
+        'link' => 'https://dashboard.elioooooo.fr/'
+    ],
+    [
         'tip' => 'Web App',
         'title' => 'Chart My Time',
         'plot' => 'Chart My Time est une application web pour le suivi de votre temps, développée sur mon temps libre, à partir de zéro et sans frameworks.',
