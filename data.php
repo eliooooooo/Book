@@ -8,6 +8,12 @@ $data = [
         'link' => 'https://dashboard.elioooooo.fr/'
     ],
     [
+        'tip' => 'Mobile App',
+        'title' => 'FEFFS',
+        'plot' => 'Une application React Native pour gérer le Festival européen du film fantastique de Strasbourg ',
+        'git' => 'https://github.com/WeJustDev/FEFFS',
+    ],
+    [
         'tip' => 'Web App',
         'title' => 'Chart My Time',
         'plot' => 'Chart My Time est une application web pour le suivi de votre temps, développée sur mon temps libre, à partir de zéro et sans frameworks.',
