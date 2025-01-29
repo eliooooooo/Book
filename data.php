@@ -43,7 +43,7 @@ $data = [
     [
         'tip' => 'Full-Stack',
         'title' => 'BundleBuddy',
-        'plot' => 'BundleBuddy est une appliquation web développée en Symfony permettant aux développeurs de créer leurs packages npm et les sauvegarder',
+        'plot' => 'BundleBuddy est une application web développée en Symfony permettant aux développeurs de créer leurs packages npm et les sauvegarder',
         'git' => 'https://github.com/eliooooooo/BundleBuddy',
         'link' => 'https://bundlebuddy.burkle.etu.mmi-unistra.fr/'
     ],
