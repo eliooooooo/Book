@@ -89,14 +89,15 @@
         <ul class="nav text-lg pr-6">
           <li class="active" id="infos">Infos</li>
           <li id="projets">Projets</li>
+          <li id="CV"><a href="./src/CV-BURKLE-ELIOTT.pdf" target="_blank">Mon CV</a></li>
           <li id="contact">Contact</li>
         </ul>
       </nav>
     </div>
-      <div class="infosContainer absolute bottom-10 right-10 text-black dark:text-white max-w-40">
+      <div class="infosContainer absolute bottom-10 right-10 text-black dark:text-white max-w-40 text-lg">
         <p>Actuellement étudiant et alternant dans la formation BUT MMI à l'IUT de Haguenau. Développeur Front-end en alternance, je développe aussi sur mon temps libre des projets webs, <span class="text-orange-500 dark:text-yellow-400" >front et back-end</span>.</p>
       </div>
-      <div class="projetsContainer projets hidden absolute bottom-10 mx-auto w-full px-4 xs:px-12 sm:px-20">
+      <div class="projetsContainer projets hidden absolute bottom-10 mx-auto w-full px-4 xs:px-12 sm:px-20 text-lg">
         <div class="swiper swiperProjet relative overflow-visible">
           <div class="flex flex-row items-center gap-4 text-orange-500 dark:text-yellow-400 mb-4">
             <div class="swiper-pagination dark:bg-yellow-400 bg-orange-500 h-[2px] w-full mr-2 sm:mr-8 md:mr-14 lg:mr-20" ></div>
@@ -144,8 +145,8 @@
       <div class="contactContainer hidden absolute text-right right-10 bottom-10 mx-auto max-w-44">
         <div class="text-black dark:text-white">
           <div>
-            <p class="text-lg w-fit ml-auto border-b-[2px] border-orange-500 dark:border-yellow-400">Retrouvez-moi sur :</p>
-            <ul class="flex flex-row gap-6 justify-end mt-5 mb-2">
+            <p class="text-xl w-fit ml-auto border-b-[2px] border-orange-500 dark:border-yellow-400">Retrouvez-moi sur :</p>
+            <ul class="flex flex-row gap-6 justify-end mt-5 mb-2 ">
               <li>
                 <a href="https://github.com/eliooooooo" class="hover:text-orange-500 hover:dark:text-yellow-400 transition-all">
                   <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" class="bi bi-github" viewBox="0 0 16 16">
@@ -161,10 +162,10 @@
                 </a>
               </li>
             </ul>
-            <span class="block w-fit ml-auto mb-2 border-b-[2px] border-orange-500 dark:border-yellow-400">ou par mail :</span>
-            <span>eliott.burkle@gmail.com</span>
+            <span class="block w-fit ml-auto mb-2 border-b-[2px] border-orange-500 dark:border-yellow-400 text-lg">ou par mail :</span>
+            <span class="text-lg">eliott.burkle@gmail.com</span>
           </div>
-          <p class="mt-8"><span class="text-orange-500 dark:text-yellow-400">N'hésitez pas</span> à me contacter pour toute opportunité, question ou commentaire. Je serai ravi de vous répondre.</p>
+          <p class="mt-8 text-lg"><span class="text-orange-500 dark:text-yellow-400">N'hésitez pas</span> à me contacter pour toute opportunité, question ou commentaire. Je serai ravi de vous répondre.</p>
           <div class="flex flex-row items-center justify-around mt-8">
         </div>
       </div>
