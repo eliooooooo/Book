@@ -1,11 +1,29 @@
 <?php
 $data = [
     [
+        'tip' => 'Full-Stack',
+        'title' => 'Slack application',
+        'plot' => 'Une application permettant de recenser les spots de plusieurs disciplines (slackline, highline, tree climbing). Basée sur les fonctionnalités de Firebase.',
+        'git' => 'https://github.com/eliooooooo/slack'
+    ],
+    [
         'tip' => 'Front-End',
         'title' => 'Site monitoring Dashboard',
         'plot' => 'Track My Site est un tableau de bord de surveillance de site web développé en VueJS. Il permet de surveiller les performances de votre site.',
         'git' => 'https://github.com/eliooooooo/Vue-Dashboard',
         'link' => 'https://dashboard.elioooooo.fr/'
+    ],
+    [
+        'tip' => 'Mobile App',
+        'title' => 'Dev Journey',
+        'plot' => 'Une application permettant de faire découvrir les bases de la programmation sous forme de quizz. Développée en React Native.',
+        'git' => 'https://github.com/eliooooooo/DevJourney'
+    ],
+    [
+        'tip' => 'API',
+        'title' => 'Dev Journey API',
+        'plot' => 'Une API permettant de gérer les utilisateurs et les quizz de l\'application Dev Journey. Cela permet une prise en charge de l\'applications sur d\'autres supports',
+        'git' => 'https://github.com/eliooooooo/DevJourneyAPI'
     ],
     [
         'tip' => 'Mobile App',
@@ -22,10 +40,21 @@ $data = [
     ],
     [
         'tip' => 'Full-Stack',
+        'title' => 'Mellow Clo Reproduction',
+        'plot' => 'Un projet de reproduction du site Mellow Clo, développé en Drupal.',
+        'git' => 'https://github.com/eliooooooo/Mellow-Clo-Drupal-Reproduction'
+    ],
+    [
+        'tip' => 'Full-Stack',
         'title' => 'Custom CMS',
         'plot' => 'Custom CMS est un système de gestion de contenu développé en PHP, sans framework. Il a permis de créer un site de contenu journalistique.',
         'git' => 'https://github.com/eliooooooo/Custom-CMS',
-        'link' => 'https://www.cuej.info/mini-sites/sauvage/'
+    ],
+    [
+        'tip' => 'Full-Stack',
+        'title' => 'EasyGest',
+        'plot' => 'EasyGest est une application web permettant de gérer une micro-entreprise de manière simplifiée. Développée en Laravel à l\'aide du framework Filament.',
+        'git' => 'https://github.com/eliooooooo/EasyGest'
     ],
     [
         'tip' => 'IA',
