@@ -94,7 +94,7 @@
         </ul>
       </nav>
     </div>
-      <div class="infosContainer absolute bottom-10 right-10 text-black dark:text-white max-w-40 text-lg">
+      <div class="infosContainer absolute bottom-10 right-10 text-black dark:text-white max-w-[220px] text-lg">
         <p>Actuellement étudiant et alternant dans la formation BUT MMI à l'IUT de Haguenau. Développeur Front-end en alternance, je développe aussi sur mon temps libre des projets webs, <span class="text-orange-500 dark:text-yellow-400" >front et back-end</span>.</p>
       </div>
       <div class="projetsContainer projets hidden absolute bottom-10 mx-auto w-full px-4 xs:px-12 sm:px-20 text-lg">
@@ -139,10 +139,9 @@
             </div>
             <?php } ?>
           </div>
-
         </div>
       </div>
-      <div class="contactContainer hidden absolute text-right right-10 bottom-10 mx-auto max-w-44">
+      <div class="contactContainer hidden absolute text-right right-10 bottom-10 mx-auto max-w-[220px]">
         <div class="text-black dark:text-white">
           <div>
             <p class="text-xl w-fit ml-auto border-b-[2px] border-orange-500 dark:border-yellow-400">Retrouvez-moi sur :</p>
