@@ -27,20 +27,16 @@ jobs:
           # Vérifier les versions de Node.js et npm
           echo "Node.js version: $(node -v)"
           echo "npm version: $(npm -v)"
+
+          rm -rf Book
+          cd /var/www
           
           # Cloner le dépôt
           git clone https://github.com/eliooooooo/Book.git
-          if [ ! -d "www" ]; then
-            mkdir www
-          fi
-          
-          # Copier les fichiers et changer de répertoire
-          cp -r Book/* www
-          rm -rf Book
-          cd www
 
           # Afficher les fichiers et permissions dans le répertoire www avant l'installation
           echo "Contenu du répertoire www avant l'installation:"
+          cd Book
           ls -l
           
           # Installer les dépendances
