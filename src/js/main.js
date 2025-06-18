@@ -171,18 +171,21 @@ document.addEventListener('DOMContentLoaded', () => {
       projetsBlock.style.display = "none";
       gsap.to( ".projetsContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
+        display: "none",
         duration: 0.3,
         ease: "ease-in-out",
       });
       projetsBlock.style.display = "none";
       gsap.to( ".contactContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
-        duration: 0.3,
+        display: "none",
+        duration: 0,
         ease: "ease-in-out",
       });
       infosBlock.style.display = "block";
       tl.to( ".infosContainer", {
         opacity: 1, // Animer l'opacité de 0 à 1
+        display: "block",
         duration: 0.3,
         ease: "ease-in-out",
       });
@@ -193,18 +196,21 @@ document.addEventListener('DOMContentLoaded', () => {
       infosBlock.style.display = "none";
       tl.to( ".infosContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
+        display: "none",
         duration: 0.3,
         ease: "ease-in-out",
       });
       contactBlock.style.display = "none";
       tl.to( ".contactContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
+        display: "none",
         duration: 0.3,
         ease: "ease-in-out",
       });
       projetsBlock.style.display = "block";
       tl.to( ".projetsContainer", {
         opacity: 1, // Animer l'opacité de 0 à 1
+        display: "block",
         duration: 0.3,
         ease: "ease-in-out",
       });
@@ -215,18 +221,21 @@ document.addEventListener('DOMContentLoaded', () => {
       infosBlock.style.display = "none";
       tl.to( ".infosContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
+        display: "none",
         duration: 0.3,
         ease: "ease-in-out",
       });
       projetsBlock.style.display = "none";
       tl.to( ".projetsContainer", {
         opacity: 0, // Animer l'opacité de 1 à 0
+        display: "none",
         duration: 0.3,
         ease: "ease-in-out",
       });
       contactBlock.style.display = "block";
       tl.to( ".contactContainer", {
         opacity: 1, // Animer l'opacité de 0 à 1
+        display: "block",
         duration: 0.3,
         ease: "ease-in-out",
       });

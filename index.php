@@ -73,7 +73,7 @@
       <div class="circle hidden xl:block"></div>
     </div>      
   </div>
-  <main class="container relative mx-auto w-full h-full">
+  <main class="container relative mx-auto flex flex-col w-full h-full justify-between pb-20">
     <div class="themeSwitcher hidden hover:scale-110 transition-all cursor-pointer absolute top-0 right-0 p-2 sm:p-3 z-20 bg-black dark:bg-white text-slate-300 dark:text-blue1 rounded-full m-3 sm:m-5" style="display: none;">
       <svg xmlns="http://www.w3.org/2000/svg" width="28" height="28" fill="currentColor" id="moon" class="bi bi-moon-stars" viewBox="0 0 16 16">
         <path d="M6 .278a.77.77 0 0 1 .08.858 7.2 7.2 0 0 0-.878 3.46c0 4.021 3.278 7.277 7.318 7.277q.792-.001 1.533-.16a.79.79 0 0 1 .81.316.73.73 0 0 1-.031.893A8.35 8.35 0 0 1 8.344 16C3.734 16 0 12.286 0 7.71 0 4.266 2.114 1.312 5.124.06A.75.75 0 0 1 6 .278M4.858 1.311A7.27 7.27 0 0 0 1.025 7.71c0 4.02 3.279 7.276 7.319 7.276a7.32 7.32 0 0 0 5.205-2.162q-.506.063-1.029.063c-4.61 0-8.343-3.714-8.343-8.29 0-1.167.242-2.278.681-3.286"/>
@@ -83,7 +83,7 @@
         <path d="M12 8a4 4 0 1 1-8 0 4 4 0 0 1 8 0M8.5 2.5a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m0 11a.5.5 0 1 1-1 0 .5.5 0 0 1 1 0m5-5a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m-11 0a.5.5 0 1 1 0-1 .5.5 0 0 1 0 1m9.743-4.036a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m-7.779 7.779a.5.5 0 1 1-.707-.707.5.5 0 0 1 .707.707m7.072 0a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707M3.757 4.464a.5.5 0 1 1 .707-.707.5.5 0 0 1-.707.707"/>
       </svg>
     </div>
-    <div class="global absolute top-20 w-full pl-4 xs:pl-12 sm:pl-20 text-black dark:text-white z-50">
+    <div class="global relative mt-20 w-full pl-4 xs:pl-12 sm:pl-20 text-black dark:text-white z-50">
       <h1 class="text-left text-2xl sm:text-3xl lg:text-4xl cursor-default"><span class="madimi-one-regular text-5xl sm:text-7xl lg:text-8xl">El<span class="rotateLetter text-orange-500 dark:text-yellow-400 inline-block">i</span>ott BURKLE</span><br> <span class="mt-2 sm:mt-4 md:mt-6 block">Développeur web</span></h1>
       <nav class="mt-10 border-t-2 border-orange-500 dark:border-yellow-400 w-fit pt-4">
         <ul class="nav text-lg pr-6">
@@ -94,10 +94,10 @@
         </ul>
       </nav>
     </div>
-      <div class="infosContainer absolute bottom-10 right-10 text-black dark:text-white max-w-[220px] text-lg">
+      <div class="infosContainer relative ml-auto mt-10 mr-10 text-black dark:text-white max-w-[220px] text-lg">
         <p>Actuellement étudiant et alternant dans le développement web, j'aime apprendre et m'inition à de nouvelles pratiques, de nature "touche à tout" je pratique le développement <span class="text-orange-500 dark:text-yellow-400" >Full Stack</span>.</p>
       </div>
-      <div class="projetsContainer projets hidden absolute bottom-10 mx-auto w-full px-4 xs:px-12 sm:px-20 text-lg">
+      <div class="projetsContainer projets hidden relative mb10 mx-auto w-full px-4 xs:px-12 sm:px-20 text-lg">
         <div class="swiper swiperProjet relative overflow-visible">
           <div class="flex flex-row items-center gap-4 text-orange-500 dark:text-yellow-400 mb-4">
             <div class="swiper-pagination dark:bg-yellow-400 bg-orange-500 h-[2px] w-full mr-2 sm:mr-8 md:mr-14 lg:mr-20" ></div>
@@ -149,7 +149,7 @@
           </div>
         </div>
       </div>
-      <div class="contactContainer hidden absolute text-right right-10 bottom-10 mx-auto max-w-[220px]">
+      <div class="contactContainer hidden relative text-right ml-auto mr-10 mb-10 mx-auto max-w-[220px]">
         <div class="text-black dark:text-white">
           <div>
             <p class="text-xl w-fit ml-auto border-b-[2px] border-orange-500 dark:border-yellow-400">Retrouvez-moi sur :</p>
@@ -170,10 +170,9 @@
               </li>
             </ul>
             <span class="block w-fit ml-auto mb-2 border-b-[2px] border-orange-500 dark:border-yellow-400 text-xl">ou par mail :</span>
-            <span class="text-lg">eliott.burkle@gmail.com</span>
+            <a href="mailto:eliott.burkle@gmail.com" class="text-lg text-orange-500 dark:text-yellow-400 underline">eliott.burkle@gmail.com</a>
           </div>
           <p class="mt-8 text-lg"><span class="text-orange-500 dark:text-yellow-400">N'hésitez pas</span> à me contacter pour toute opportunité, question ou commentaire. Je serai ravi de vous répondre.</p>
-          <div class="flex flex-row items-center justify-around mt-8">
         </div>
       </div>
       
