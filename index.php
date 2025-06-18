@@ -94,8 +94,8 @@
         </ul>
       </nav>
     </div>
-      <div class="infosContainer relative ml-auto mt-10 mr-10 text-black dark:text-white max-w-[220px] text-lg">
-        <p>Actuellement étudiant et alternant dans le développement web, j'aime apprendre et m'inition à de nouvelles pratiques, de nature "touche à tout" je pratique le développement <span class="text-orange-500 dark:text-yellow-400" >Full Stack</span>.</p>
+      <div class="infosContainer relative ml-auto mt-10 mr-10 text-black dark:text-white max-w-[280px] text-lg">
+        <p>Actuellement étudiant et alternant dans le développement web, j'aime apprendre et m'inition à de nouvelles pratiques, de nature "touche à tout" je pratique le développement <span class="text-orange-500 dark:text-yellow-400" >Full Stack</span> au travers de différentes technologies comme <span class="text-orange-500 dark:text-yellow-400" >TailwindCSS, React (Native/Js), NodeJs</span>...</p>
       </div>
       <div class="projetsContainer projets hidden relative mb10 mx-auto w-full px-4 xs:px-12 sm:px-20 text-lg">
         <div class="swiper swiperProjet relative overflow-visible">
@@ -149,7 +149,7 @@
           </div>
         </div>
       </div>
-      <div class="contactContainer hidden relative text-right ml-auto mr-10 mb-10 mx-auto max-w-[220px]">
+      <div class="contactContainer hidden relative text-right ml-auto mr-10 mb-10 mx-auto max-w-[280px]">
         <div class="text-black dark:text-white">
           <div>
             <p class="text-xl w-fit ml-auto border-b-[2px] border-orange-500 dark:border-yellow-400">Retrouvez-moi sur :</p>
