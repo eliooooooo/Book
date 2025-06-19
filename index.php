@@ -20,7 +20,7 @@
   <title>Eliott BURKLE - Portfolio</title>
 </head>
 
-<body class="bg h-full">
+<body class="bg h-auto">
   <div class="circleContainer absolute w-full mx-auto min-h-[665px] h-full p-8 flex flex-col justify-between gap-2"> 
     <div class="flex flex-row justify-between gap-4" >
       <div class="circle"></div>
