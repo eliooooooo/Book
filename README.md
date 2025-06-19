@@ -16,10 +16,11 @@ Ce projet présente mes compétences, expériences et projets réalisés, avec u
 
 ## ⚙️ Installation & Lancement
 
-1. **Cloner le dépôt :**
+1. **Cloner le dépôt et installation des dépendances:**
    ```bash
    git clone git@github.com:eliooooooo/Book.git
    cd Book
+   npm install
    ```
 
 2. **Compiler les assets :**
